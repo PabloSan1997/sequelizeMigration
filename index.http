@@ -1,0 +1,35 @@
+GET http://localhost:3000 HTTP/1.1
+###
+
+GET http://localhost:3000/api/v1/product HTTP/1.1
+###
+
+DELETE http://localhost:3000/api/v1/product/68229109-c55a-4353-9fb1-e189b52d8244 HTTP/1.1
+###
+
+POST http://localhost:3000/api/v1/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Mira",
+    "costo":20.5,
+    "descripcion":"Esto es un ejemplo",
+    "url_image":"Salida.com"
+}
+###
+
+PUT http://localhost:3000/api/v1/product/9bf2b7f0-6c7c-49e0-a5c0-17ed63a399a3 HTTP/1.1
+Content-Type: application/json
+
+ {
+    "id": "9bf2b7f0-6c7c-49e0-a5c0-17ed63a399a3",
+    "nombre": "Prducto editado",
+    "costo": 20.5,
+    "descripcion": "Este es un producto de prueba",
+    "url_image": "imagen.com",
+    "createdAt": "2023-10-29T23:57:42.390Z",
+    "updatedAt": "2023-10-29T23:57:42.390Z"
+  }
+###
+
+
